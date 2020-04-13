@@ -24,7 +24,7 @@ class Depr
     /**
      * @var string
      *
-     * @ORM\Column(name="rfim", type="string", length=16, nullable=true)
+     * @ORM\Column(name="rfim", type="string", length=16, nullable=false)
      */
     private $rfim;
 
@@ -38,392 +38,408 @@ class Depr
     /**
      * @var string
      *
-     * @ORM\Column(name="node", type="string", length=10)
+     * @ORM\Column(name="node", type="string", length=10, nullable=false)
      */
     private $node;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="cdld", type="string", length=3)
+     * @ORM\Column(name="cdld", type="string", length=3, nullable=true)
      */
     private $cdld;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="nopt", type="string", length=10)
+     * @ORM\Column(name="nopt", type="string", length=10, nullable=true)
      */
     private $nopt;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="nota", type="string", length=10)
+     * @ORM\Column(name="nota", type="string", length=10, nullable=true)
      */
     private $nota;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="noch", type="string", length=6)
+     * @ORM\Column(name="noch", type="string", length=6, nullable=true)
      */
     private $noch;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="nopc", type="string", length=7)
+     * @ORM\Column(name="nopc", type="string", length=7, nullable=true)
      */
     private $nopc;
 
     /**
      * @var int
      *
-     * @ORM\Column(name="tyca", type="integer")
+     * @ORM\Column(name="tyca", type="integer", nullable=true, nullable=true)
      */
     private $tyca;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="tyde", type="string", length=2)
+     * @ORM\Column(name="tyde", type="string", length=2, nullable=true)
      */
     private $tyde;
 
     /**
      * @var int
      *
-     * @ORM\Column(name="etpr", type="integer")
+     * @ORM\Column(name="etpr", type="integer", nullable=true)
      */
     private $etpr;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="dtpr", type="string", length=8)
+     * @ORM\Column(name="dtpr", type="string", length=8, nullable=true)
      */
     private $dtpr;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="hhpr", type="string", length=8)
+     * @ORM\Column(name="hhpr", type="string", length=8, nullable=true)
      */
     private $hhpr;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="stpu", type="string", length=2)
+     * @ORM\Column(name="stpu", type="string", length=2, nullable=true)
      */
     private $stpu;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="uspu", type="string", length=2)
+     * @ORM\Column(name="uspu", type="string", length=2, nullable=true)
      */
     private $uspu;
 
     /**
      * @var int
      *
-     * @ORM\Column(name="etaq", type="integer")
+     * @ORM\Column(name="etaq", type="integer", nullable=true)
      */
     private $etaq;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="dtaq", type="string", length=8)
+     * @ORM\Column(name="dtaq", type="string", length=8, nullable=true)
      */
     private $dtaq;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="hhaq", type="string", length=8)
+     * @ORM\Column(name="hhaq", type="string", length=8, nullable=true)
      */
     private $hhaq;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="usaq", type="string", length=8)
+     * @ORM\Column(name="usaq", type="string", length=8, nullable=true)
      */
     private $usaq;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="staq", type="string", length=2)
+     * @ORM\Column(name="star", type="string", length=2, nullable=true)
      */
-    private $staq;
+    private $star;
+
+    /**
+     * @return string
+     */
+    public function getStar()
+    {
+        return $this->star;
+    }
+
+    /**
+     * @param string $star
+     */
+    public function setStar($star)
+    {
+        $this->star = $star;
+    }
 
     /**
      * @var string
      *
-     * @ORM\Column(name="dtprint", type="string", length=8)
+     * @ORM\Column(name="dtprint", type="string", length=8, nullable=true)
      */
     private $dtprint;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="hhprint", type="string", length=8)
+     * @ORM\Column(name="hhprint", type="string", length=8, nullable=true)
      */
     private $hhprint;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="usprint", type="string", length=8)
+     * @ORM\Column(name="usprint", type="string", length=8, nullable=true)
      */
     private $usprint;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="stprint", type="string", length=2)
+     * @ORM\Column(name="stprint", type="string", length=2, nullable=true)
      */
     private $stprint;
 
     /**
      * @var int
      *
-     * @ORM\Column(name="etct", type="integer")
+     * @ORM\Column(name="etct", type="integer", nullable=true)
      */
     private $etct;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="dtct", type="string", length=255)
+     * @ORM\Column(name="dtct", type="string", length=255, nullable=true)
      */
     private $dtct;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="hhct", type="string", length=8)
+     * @ORM\Column(name="hhct", type="string", length=8, nullable=true)
      */
     private $hhct;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="usct", type="string", length=8)
+     * @ORM\Column(name="usct", type="string", length=8, nullable=true)
      */
     private $usct;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="stct", type="string", length=2)
+     * @ORM\Column(name="stct", type="string", length=2, nullable=true)
      */
     private $stct;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="dtval", type="string", length=8)
+     * @ORM\Column(name="dtval", type="string", length=8, nullable=true)
      */
     private $dtval;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="hhval", type="string", length=8)
+     * @ORM\Column(name="hhval", type="string", length=8, nullable=true)
      */
     private $hhval;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="dtpc", type="string", length=8)
+     * @ORM\Column(name="dtpc", type="string", length=8, nullable=true)
      */
     private $dtpc;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="hhpc", type="string", length=8)
+     * @ORM\Column(name="hhpc", type="string", length=8, nullable=true)
      */
     private $hhpc;
 
     /**
      * @var int
      *
-     * @ORM\Column(name="prio", type="integer")
+     * @ORM\Column(name="prio", type="integer", nullable=true)
      */
     private $prio;
 
     /**
      * @var int
      *
-     * @ORM\Column(name="etec", type="integer")
+     * @ORM\Column(name="etec", type="integer", nullable=true)
      */
     private $etec;
 
     /**
      * @var int
      *
-     * @ORM\Column(name="etsa", type="integer")
+     * @ORM\Column(name="etsa", type="integer", nullable=true)
      */
     private $etsa;
 
     /**
      * @var int
      *
-     * @ORM\Column(name="rjpr", type="integer")
+     * @ORM\Column(name="rjpr", type="integer", nullable=true)
      */
     private $rjpr;
 
     /**
      * @var int
      *
-     * @ORM\Column(name="nolo", type="integer")
+     * @ORM\Column(name="nolo", type="integer", nullable=true)
      */
     private $nolo;
 
     /**
      * @var int
      *
-     * @ORM\Column(name="fiim", type="integer")
+     * @ORM\Column(name="fiim", type="string", length=12, nullable=true)
      */
     private $fiim;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="nenm1", type="string", length=50)
+     * @ORM\Column(name="nenm1", type="string", length=50, nullable=true)
      */
     private $nenm1;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="pol_carte", type="string", length=2)
+     * @ORM\Column(name="pol_carte", type="string", length=2, nullable=true)
      */
     private $polCarte;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="nenm2", type="string", length=55)
+     * @ORM\Column(name="nenm2", type="string", length=55, nullable=true)
      */
     private $nenm2;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="nepr1", type="string", length=46)
+     * @ORM\Column(name="nepr1", type="string", length=46, nullable=true)
      */
     private $nepr1;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="nepr2", type="string", length=55)
+     * @ORM\Column(name="nepr2", type="string", length=55, nullable=true)
      */
     private $nepr2;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="sx", type="string", length=1)
+     * @ORM\Column(name="sx", type="string", length=1, nullable=true)
      */
     private $sx;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="dtns", type="string", length=10)
+     * @ORM\Column(name="dtns", type="string", length=10, nullable=true)
      */
     private $dtns;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="ldns", type="string", length=53)
+     * @ORM\Column(name="ldns", type="string", length=53, nullable=true)
      */
     private $ldns;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="tlde", type="string", length=5)
+     * @ORM\Column(name="tlde", type="string", length=5, nullable=true)
      */
     private $tlde;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="ocrb1", type="string", length=36)
+     * @ORM\Column(name="ocrb1", type="string", length=36, nullable=true)
      */
     private $ocrb1;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="ocrb2", type="string", length=36)
+     * @ORM\Column(name="ocrb2", type="string", length=36, nullable=true)
      */
     private $ocrb2;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="inph", type="string", length=2)
+     * @ORM\Column(name="inph", type="string", length=2, nullable=true)
      */
     private $inph;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="adr1", type="string", length=68)
+     * @ORM\Column(name="adr1", type="string", length=68, nullable=true)
      */
     private $adr1;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="adr2", type="string", length=76)
+     * @ORM\Column(name="adr2", type="string", length=76, nullable=true)
      */
     private $adr2;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="dtdval", type="string", length=10)
+     * @ORM\Column(name="dtdval", type="string", length=10, nullable=true)
      */
     private $dtdval;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="dtfval", type="string", length=10)
+     * @ORM\Column(name="dtfval", type="string", length=10, nullable=true)
      */
     private $dtfval;
 
     /**
      * @var int
      *
-     * @ORM\Column(name="flf2", type="integer")
+     * @ORM\Column(name="flf2", type="integer", nullable=true)
      */
     private $flf2;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="libld", type="string", length=71)
+     * @ORM\Column(name="libld", type="string", length=71, nullable=true)
      */
     private $libld;
 
     /**
      * @var int
      *
-     * @ORM\Column(name="flcl", type="integer")
+     * @ORM\Column(name="flcl", type="integer", nullable=true)
      */
     private $flcl;
 
@@ -433,6 +449,129 @@ class Depr
      * @ORM\Column(name="adr3", type="string",length=68, nullable=true)
      */
     private $adr3;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="adr4", type="string",length=76, nullable=true)
+     */
+    private $adr4;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="flag_tes", type="integer", nullable=false)
+     */
+    private $flag_tes;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="numdemande", type="string",length=17, nullable=true)
+     */
+    private $numdemande;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="numordreproduction", type="string",length=10, nullable=true)
+     */
+    private $numordreproduction;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="codeanomalie", type="string",length=2, nullable=true)
+     */
+    private $codeanomalie;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="commentaireanomalie", type="integer", nullable=true)
+     */
+    private $commentaireanomalie;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="ugf", type="string",length=5, nullable=true)
+     */
+    private $ugf;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="ugf_adresse", type="string",length=170, nullable=true)
+     */
+    private $ugf_adresse;
+
+    /**
+     * @return int
+     */
+    public function getUgf()
+    {
+        return $this->ugf;
+    }
+
+    /**
+     * @param int $ugf
+     */
+    public function setUgf($ugf)
+    {
+        $this->ugf = $ugf;
+    }
+
+    /**
+     * @return int
+     */
+    public function getUgfAdresse()
+    {
+        return $this->ugf_adresse;
+    }
+
+    /**
+     * @param int $ugf_adresse
+     */
+    public function setUgfAdresse($ugf_adresse)
+    {
+        $this->ugf_adresse = $ugf_adresse;
+    }
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="cvu_station", type="string",length=32, nullable=true)
+     */
+    private $cvu_station;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="tf7_file_name", type="string",length=25, nullable=true)
+     */
+    private $tf7_file_name;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="dttf7", type="string",length=8, nullable=true)
+     */
+    private $dttf7;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="hhtf7", type="string",length=8, nullable=true)
+     */
+    private $hhtf7;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="retouche_auto", type="string",length=14, nullable=true)
+     */
+    private $retouche_auto;
 
     /**
      * Get id
@@ -1823,17 +1962,258 @@ class Depr
     {
         $this->flcl = $flcl;
 
-        return $this;
+        return $this->$flcl;
     }
 
     /**
-     * Get flcl
-     *
      * @return int
      */
     public function getFlcl()
     {
         return $this->flcl;
     }
+
+    /**
+     * Get adr3
+     *
+     * @return int
+     */
+    public function getAdr3()
+    {
+        return $this->adr3;
+    }
+
+    /**
+     * Set adr3
+     *
+     * @param integer $adr3
+     *
+     * @return Depr
+     */
+    public function setAdr3($adr3)
+    {
+        $this->adr3 = $adr3;
+
+        return $this;
+    }
+
+    /**
+     * Set adr4
+     *
+     * @param integer $adr4
+     *
+     * @return Depr
+     */
+    public function setAdr4($adr4)
+    {
+        $this->adr4 = $adr4;
+
+        return $this;
+    }
+
+    /**
+     * Get adr4
+     *
+     * @return int
+     */
+    public function getAdr4()
+    {
+        return $this->adr4;
+    }
+
+    /**
+     * @return int
+     */
+    public function getFlagTes()
+    {
+        return $this->flag_tes;
+    }
+
+    /**
+     * @param int $flag_tes
+     */
+    public function setFlagTes($flag_tes)
+    {
+        $this->flag_tes = $flag_tes;
+    }
+
+    /**
+     * @return int
+     */
+    public function getNumdemande()
+    {
+        return $this->numdemande;
+    }
+
+    /**
+     * @param int $numdemande
+     */
+    public function setNumdemande($numdemande)
+    {
+        $this->numdemande = $numdemande;
+    }
+
+    /**
+     * @return int
+     */
+    public function getNumordreproduction()
+    {
+        return $this->numordreproduction;
+    }
+
+    /**
+     * @param int $numordreproduction
+     */
+    public function setNumordreproduction($numordreproduction)
+    {
+        $this->numordreproduction = $numordreproduction;
+    }
+
+    /**
+     * @return int
+     */
+    public function getCodeanomalie()
+    {
+        return $this->codeanomalie;
+    }
+
+    /**
+     * @param int $codeanomalie
+     */
+    public function setCodeanomalie($codeanomalie)
+    {
+        $this->codeanomalie = $codeanomalie;
+    }
+
+    /**
+     * @return int
+     */
+    public function getCommentaireanomalie()
+    {
+        return $this->commentaireanomalie;
+    }
+
+    /**
+     * @param int $commentaireanomalie
+     */
+    public function setCommentaireanomalie($commentaireanomalie)
+    {
+        $this->commentaireanomalie = $commentaireanomalie;
+    }
+
+    /**
+     * @return int
+     */
+    public function getUgh()
+    {
+        return $this->ugh;
+    }
+
+    /**
+     * @param int $ugh
+     */
+    public function setUgh($ugh)
+    {
+        $this->ugh = $ugh;
+    }
+
+    /**
+     * @return int
+     */
+    public function getUghAdresse()
+    {
+        return $this->ugh_adresse;
+    }
+
+    /**
+     * @param int $ugh_adresse
+     */
+    public function setUghAdresse($ugh_adresse)
+    {
+        $this->ugh_adresse = $ugh_adresse;
+    }
+
+    /**
+     * @return int
+     */
+    public function getCvuStation()
+    {
+        return $this->cvu_station;
+    }
+
+    /**
+     * @param int $cvu_station
+     */
+    public function setCvuStation($cvu_station)
+    {
+        $this->cvu_station = $cvu_station;
+    }
+
+    /**
+     * @return int
+     */
+    public function getTf7FileName()
+    {
+        return $this->tf7_file_name;
+    }
+
+    /**
+     * @param int $tf7_file_name
+     */
+    public function setTf7FileName($tf7_file_name)
+    {
+        $this->tf7_file_name = $tf7_file_name;
+    }
+
+    /**
+     * @return int
+     */
+    public function getDttf7()
+    {
+        return $this->dttf7;
+    }
+
+    /**
+     * @param int $dttf7
+     */
+    public function setDttf7($dttf7)
+    {
+        $this->dttf7 = $dttf7;
+    }
+
+    /**
+     * @return int
+     */
+    public function getHhtf7()
+    {
+        return $this->hhtf7;
+    }
+
+    /**
+     * @param int $hhtf7
+     */
+    public function setHhtf7($hhtf7)
+    {
+        $this->hhtf7 = $hhtf7;
+    }
+
+    /**
+     * @return int
+     */
+    public function getRetoucheAuto()
+    {
+        return $this->retouche_auto;
+    }
+
+    /**
+     * @param int $retouche_auto
+     */
+    public function setRetoucheAuto($retouche_auto)
+    {
+        $this->retouche_auto = $retouche_auto;
+    }
+
+
+
 }
 
