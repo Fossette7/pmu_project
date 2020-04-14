@@ -1,0 +1,89 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+{#mettre barre deroulante#}
+<h1 xmlns="http://www.w3.org/1999/html"> Création d'une barre déroulante & filtre de recherche</h1>
+    <label for="demandeCNI">Recherche de demandes CNI</label>
+
+
+
+    <form method="get" action="search">
+        <select name="demandeCNI" size="1">
+            <option value="rfim">rfim</option>
+            <option value="noca">noca</option>
+            <option value="node">node</option>
+            <option value="cdld">cdld</option>
+            <option value="nopt">nopt</option>
+            <option value="nota">nota</option>
+            <option value="noch">noch</option>
+            <option value="nopc">nopc</option>
+            <option value="tyca">tyca /int</option>
+            <option value="tyde">tyde</option>
+            <option value="etpr">etpr /int</option>
+            <option value="dtpr">dtpr</option>
+            <option value="hhpr">hhpr</option>
+            <option value="stpu">stpu</option>
+            <option value="uspu">uspu</option>
+            <option value="etaq">etaq</option>
+            <option value="dtaq">dtaq</option>
+            <option value="hhaq">hhaq</option>
+            <option value="usaq">usaq</option>
+            <option value="star">star</option>
+            <option value="dtprint">dtprint</option>
+            <option value="hhprint">hhprint</option>
+            <option value="usprint">usprint</option>
+            <option value="stprint">stprint</option>
+            <option value="etct">etct</option>
+            <option value="dtct">dtct</option>
+            <option value="hhct">hhct</option>
+            <option value="usct">usct</option>
+            <option value="stct">stct</option>
+            <option value="dtval">dtval</option>
+            <option value="hhval">hhval</option>
+            <option value="dtpc">dtpc</option>
+            <option value="hhpc">hhpc</option>
+            <option value="prio">prio</option>
+            <option value="etec">etec</option>
+            <option value="etsa">etsa</option>
+            <option value="rjpr">rjpr</option>
+            <option value="nolo">nolo</option>
+            <option value="fiim">fiim</option>
+            <option value="nenm1">nenm1</option>
+            <option value="pol_carte">pol_carte</option>
+            <option value="nenm2">nenm2</option>
+            <option value="nepr1">nepr1</option>
+            <option value="nepr2">nepr2</option>
+            <option value="sx">sx</option>
+            <option value="dtns">dtns</option>
+            <option value="ldns">ldns</option>
+            <option value="tlde">tlde</option>
+            <option value="ocrb1">ocrb1</option>
+            <option value="ocrb2">ocrb2</option>
+            <option value="inph">inph</option>
+            <option value="adr1">adr1</option>
+            <option value="adr2">adr2</option>
+            <option value="dtdval">dtdval</option>
+            <option value="flf2">flf2</option>
+            <option value="libld">libld</option>
+            <option value="flcl">flcl</option>
+            <option value="adr3">adr3</option>
+            <option value="adr4">adr4</option>
+            <option value="flag_tes">flag_tes</option>
+            <option value="numdemande">numdemande</option>
+            <option value="numordreproduction">numordreproduction</option>
+            <option value="codeanomalie">codeanomalie</option>
+            <option value="commentaireanomalie">commentaireanomalie</option>
+            <option value="ugf">ugf</option>
+            <option value="ugf_adresse">ugf_adresse</option>
+            <option value="cvu_station">cvu_station</option>
+            <option value="tf7_file_name">tf7_file_name</option>
+            <option value="dttf7">dttf7</option>
+            <option value="retouche_auto">retouche_auto</option>
+
+        </select>
+        <input type="search" name="mysearch" value="Filtre de recherche" placeholder="filtre de recherche">
+        <input type="submit" value="Rechercher">
+    </form>
+
+
+{% endblock %}
